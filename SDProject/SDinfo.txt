@@ -1,0 +1,10 @@
+To start logging utilize the setuptSensorHum.sh script to enable all necessary libraries and 
+other systems needed for the data logging. Check to ensure all checks are completed, if any 
+errors restart the script. 
+
+Once on the system will start recording data every 30 seconds and importing the data to a sql 
+lite 3 database. From there we are able to take specific time stamps and dates from the 
+database and export it as a csv file for easy import to an excel file for graphing and other 
+utilities. To do so run this command in the terminal of the pi:[ echo "2025-01-01_00:00:00 
+2025-01-10_23:59:59" > export_request.txt ] while changing the date and times as needed for 
+correct data export.
